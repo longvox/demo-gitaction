@@ -2,12 +2,14 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ 'master' ]
+    branches: [ 'master', 'thai', 'tuan' ]
 
 jobs:
   test:
 
     runs-on: ubuntu-latest
+    if:
+      contains('refs/heads/thai refs/heads/tuan refs/heads/master', github.ref)
 
     strategy:
       matrix:
