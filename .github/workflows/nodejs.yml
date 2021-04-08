@@ -38,4 +38,5 @@ jobs:
           cd ~/demo-gitaction
           git pull origin master
           npm install
+          pm2
           pm2 restart node-app
