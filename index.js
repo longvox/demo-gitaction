@@ -18,6 +18,10 @@ app.get("/thai", function (req, res) {
 });
 
 
+app.get("/tuan", function (req, res) {
+ return res.send("Tuan da sua code");
+});
+
 // listen to port 7000 by default
 app.listen(process.env.PORT || 7000, () => {
   console.log("Server is running");
