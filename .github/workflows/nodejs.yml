@@ -35,7 +35,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          whoami
-          pwd
-          ls
-
+          cd ~/demo-gitaction
+          git pull origin master
+          npm install
+          pm2 restart node-app
