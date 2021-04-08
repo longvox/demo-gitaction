@@ -18,8 +18,8 @@ app.get("/thai", function (req, res) {
 });
 
 
-app.get("/tuan", function (req, res)
- return res.send("Tuan da pha code");
+app.get("/tuan", function (req, res) {
+ return res.send("Tuan da sua code");
 });
 
 // listen to port 7000 by default
