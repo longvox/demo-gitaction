@@ -13,6 +13,11 @@ app.get("/test", function (req, res) {
 });
 
 
+app.get("/thai", function (req, res) {
+ return res.send("Thai da code api nay");
+});
+
+
 // listen to port 7000 by default
 app.listen(process.env.PORT || 7000, () => {
   console.log("Server is running");
